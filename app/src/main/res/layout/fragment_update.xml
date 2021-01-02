@@ -8,46 +8,48 @@
     tools:context=".fragment.update.UpdateFragment">
 
     <EditText
-        android:id="@+id/titleAdd"
+        android:id="@+id/titleUpdate"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:alpha="0.5"
         android:background="@drawable/custom_input"
         android:ems="10"
-        android:paddingLeft="10dp"
         android:hint="@string/add_title"
         android:inputType="textPersonName"
-
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerPriorityAdd"
+        android:id="@+id/spinnerPriorityUpdate"
         android:layout_width="0dp"
+
         android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:entries="@array/prioritys"
         android:alpha="0.5"
+
         android:background="@drawable/custom_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleAdd" />
+        app:layout_constraintTop_toBottomOf="@+id/titleUpdate" />
 
     <EditText
-        android:id="@+id/descriptionAdd"
+        android:id="@+id/descriptionUpdate"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/custom_input"
-        android:ems="10"
         android:gravity="start|top"
         android:hint="@string/add_description"
         android:inputType="textMultiLine"
+
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerPriorityAdd"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPriorityUpdate"
         app:layout_goneMarginTop="8dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
