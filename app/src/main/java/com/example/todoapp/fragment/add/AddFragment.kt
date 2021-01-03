@@ -54,10 +54,10 @@ class AddFragment : Fragment() {
             toDoViewModel.insertData(newData)
             findNavController().popBackStack()
 
-            Toast.makeText(context, "Save Sucess in Database", Toast.LENGTH_LONG)
+            Toast.makeText(context, "Save Sucess in Database", Toast.LENGTH_LONG).show()
 
         } else {
-            Toast.makeText(context, "Save Error in Database", Toast.LENGTH_SHORT)
+            Toast.makeText(context, "Save Error in Database", Toast.LENGTH_SHORT).show()
 
         }
 
