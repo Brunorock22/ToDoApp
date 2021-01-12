@@ -20,4 +20,7 @@ interface ToDoDao {
 
     @Query(value = "DELETE FROM TODO_TABLE")
     suspend fun deleteAll()
+
+    @Query(value = "SELECT * FROM  TODO_TABLE WHERE title like :searchQuery")
+    fun searchDatabase(searchQuery: String): LiveData<List<ToDoData>>
 }
